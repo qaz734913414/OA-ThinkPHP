@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视图中如何使用函数</title>
+</head>
+{// 引入header文件}
+<include file="header" />
+<body>
+现在时间是：{$time|date='H:i:s',###} <br />
+截取字符串的函数，执行顺序是从左至右
+{$str|strtoupper|strtolower|substr=0,8} <br />
+
+变量未定义或为空时可使用默认值形式<br />
+{$god|default='这家伙很懒，什么都没有留下...'}
+<include file="footer" />
+</body>
+</html>

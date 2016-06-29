@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板中遍历数组</title>
+</head>
+<body>
+foreach方式：<br />
+<foreach name="arr" item="vo">
+    {$vo.id}-{$vo.name}-{$vo.nickname}<br />
+</foreach>
+<hr />
+foreach方式2：<br />
+<foreach name="arr" item="vo">
+    <foreach name="vo" item="vo2">
+        {$vo2}-
+    </foreach>
+    <br />
+</foreach>
+
+<hr />
+volist方式1：<br />
+<volist name="arr" id="vo">
+    {$vo.id}-{$vo.name}-{$vo.nickname}<br />
+</volist>
+
+<hr />
+volist方式2：<br />
+<volist name="arr" id="vo">
+    <volist name="vo" id="vo2">
+        {$vo2}-
+    </volist>
+    <br />
+</volist>
+
+<hr />
+volist方式3：{// 貌似还不行}<br />
+<volist name="arr" id="vo">
+    <volist name="vo['sub']" id="sub">
+        {$sub.name}
+    </volist>
+</volist>
+</body>
+</html>

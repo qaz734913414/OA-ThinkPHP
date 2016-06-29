@@ -1,0 +1,8 @@
+[ 2016-06-26T14:32:52+08:00 ] 127.0.0.1 /index.php/Admin/User/charts
+ERR: 1066:Not unique table/alias: 't2'
+ [ SQL语句 ] : SELECT count(t1.id) as count,t2.name as dept_name FROM tp_user t1 left join tp_dept as t2 on t1,dept_id = t2.id  GROUP BY dept_name 
+
+[ 2016-06-26T14:33:30+08:00 ] 127.0.0.1 /index.php/Admin/User/charts
+ERR: 1066:Not unique table/alias: 't2'
+ [ SQL语句 ] : SELECT count(t1.id) as count,t2.name as dept_name FROM tp_user t1 left join tp_dept as t2 on t1,dept_id = t2.id  GROUP BY dept_name HAVING count > 0 
+

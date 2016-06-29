@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板中的常量替换</title>
+</head>
+<body>
+
+
+模板中三种注释方式：
+<ol>
+    <li>html原始的单行和多行注释方式，可以用 <!--这里是注释--></li>
+    <li>TP 中的单行注释， {// 这里是单行注释，你能看到我吗？}</li>
+    <li>TP 中的多行注释，{/* 这里是
+        多行
+        注释
+        的
+        内容
+        服务器级别的
+        前台显示源代码
+        也看不到
+        我
+        */}
+    </li>
+</ol>
+
+
+<ul>
+    <li>__MODULE__ : 表示从入口文件开始，至分组的url部分</li>
+    <li>__CONTROLLER__: 表示从入口文件开始，至控制器的url部分</li>
+    <li>__ACTION__: 表示从入口文件开始，至方法的url部分</li>
+    <li>__SELF__: 表示从入口文件开始，至最后（包含方法后面的其他url部分）的url部分</li>
+    <li>__PUBLIC__ ：表示站点根目录的Public目录地址，很常用</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板中if的用法</title>
+</head>
+<body>
+<if condition="$day==1">
+    星期一
+    <elseif condition="$day==2" />
+    星期二
+    <elseif condition="$day==3" />
+    星期三
+    <elseif condition="$day==4" />
+    星期四
+    <elseif condition="$day==5" />
+    星期五
+    <elseif condition="$day==6" />
+    星期六
+    <else />
+    星期日
+</if>
+
+<hr />
+<switch name="day">
+    <case value="1">星期一</case>
+    <case value="2">星期二</case>
+    <case value="3">星期三</case>
+    <case value="4">星期四</case>
+    <case value="5">星期五</case>
+    <case value="6">星期六</case>
+    <default />星期日
+</switch>
+</body>
+</html>
